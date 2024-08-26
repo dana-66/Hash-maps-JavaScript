@@ -14,4 +14,11 @@ mapHash.set('Sushi','Poodle');
 mapHash.set('Petunia','retriever');
 mapHash.set('lilly','husky');
 
-console.log(mapHash.get('Sushi'));
+console.log(mapHash.get('Sushi'));  //Poodle
+console.log(mapHash.size);  //4
+
+mapHash.delete('Precious');
+console.log(mapHash);   //Map(3) {'Sushi' => 'Poodle', 'Petunia' => 'retriever', 'lilly' => 'husky'}
+
+mapHash.clear();
+console.log(mapHash.size);  //0
